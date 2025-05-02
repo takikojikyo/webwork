@@ -62,8 +62,8 @@ img{
   }
   .cv_btn:active {
     -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
+    transform: translateY(4px);
+    border-bottom: none;
   }
 
 
@@ -398,6 +398,62 @@ qa
 }
 
 /* ----------------------------------------
+news
+---------------------------------------- */
+
+.news{
+  padding: 50px 0;
+  background-color: #E4EFF4;
+}
+.news_title{
+  color: #4190F5;
+}
+.news-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.news-list img{
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.news-list h3{
+  font-size: 18px;
+}
+.news-list p{
+  font-size: 14px;
+}
+
+.news_btn{
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto ;
+  color: #fdfdfd;
+  background: #024CAA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border-bottom: solid 4px #0B356B;
+  padding: 8px 5px;
+  }
+  .news_btn img{
+    width: 16px;
+    margin-left: 10px;
+  }
+  .news_btn p{
+    font-size: 20px;    
+    font-weight: bold;
+  }
+  .news_btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+  }
+
+/* ----------------------------------------
 cv_area
 ---------------------------------------- */
 .cv_area{
@@ -516,6 +572,82 @@ footer img{
 .copyright{
   font-size: 12px;
 }
+
+
+/* ----------------------------------------
+news_achive
+---------------------------------------- */
+.newsachive_title{
+  background-image: url("../img/archive-top.webp");
+  width: 100%;
+  height: 75vh;
+  background-position: 50% 63%;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
+.newsachive_title::after{
+  background-color: rgba(102,102,102,0.5);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.newsachive_title h2{
+font-size: 54px;
+color: #fdfdfd;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 3;
+}
+.newsachive_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+.newsachive_list{
+  width: 75%;
+}
+.newsachive_list li{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+.newsachive_list img{
+  margin-bottom: 5px;
+}
+.achive_tag{
+  width: 23%;
+  background-color: #E4EFF4;
+  padding: 10px;
+  font-size: 18px;
+}
+.achive_tag h3{
+  font-size: 20px;
+  background: #4190F5;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.achive_tag li{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.achive_tag1{
+  margin-bottom: 40px;
+}
+.date{
+  color: #024caa;
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -691,7 +823,30 @@ cv_area
   .cv_box_btn p{
       font-size: 22px;
   }
-  
+
+  /* ----------------------------------------
+news
+---------------------------------------- */
+
+.news-list{
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.news-list h3{
+  font-size: 16px;
+}
+.news-list img{
+  height: 200px;
+}
+.news_btn{
+    padding: 5px 5px;
+  }
+
+  .news_btn p{
+    font-size: 18px;    
+  }
+
+
 
 
 /* ----------------------------------------
