@@ -868,6 +868,30 @@ footer img{
 }
 
 
+/* ----------------------------------------
+news_achive
+---------------------------------------- */
+.newsachive_title{
+  height: 60vh;
+}
+
+.newsachive_title h2{
+font-size: 36px;
+transform: translate(-50%,-50%);
+}
+.newsachive_box{
+  flex-direction: column;
+}
+.newsachive_list{
+  width:100%;
+}
+
+.achive_tag{
+  width: 100%;
+}
+
+
+
 }
 
 @media(max-width:500px){
